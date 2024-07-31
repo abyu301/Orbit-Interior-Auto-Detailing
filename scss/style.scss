@@ -1,0 +1,368 @@
+/*
+Theme Name: Carwash Autowash & Detailing HTML5 template
+Author: Markhor Themes
+Author URI: https://themeforest.net/user/arklogics
+Version: 1
+Description: Base theme for HTML5
+Text Domain: base
+Tags: one-column, two-columns, three-columns
+Theme URI: http://www.htmlbeans.com/html/carwash/
+*/
+
+/* ---------------------------------------------------------
+
+1  Logo/.logo
+2  midBar/.midBar
+3  contactList/.contactList
+4  menuHolder/.menuHolder
+5  searchFormCollapse/.searchFormCollapse
+6  navHolder/.navHolder
+7  navCollapse/.navCollapse
+8  homepage2/.homepage2
+9  homepage3/.homepage3
+10   htTxt/.htTxt
+11   snHolder/.snHolder
+12   topPBar/.topPBar
+13   topBar/.topBar
+14   socialNetwork/.socialNetwork
+15   homepage4/.homepage4
+16   contactADList/.contactADList
+17   topNavLink/.topNavLink
+18   dropMenu/.dropMenu
+19   menuLogo/.menuLogo
+20   headerFixed/.headerFixed
+21   logoBlack/.logoBlack
+22   sticky-wrap-menuHolder/.sticky-wrap-menuHolder
+23   body/body
+24   pageWrapper/#pageWrapper
+25   heading/.heading
+26   headingI/.headingI
+27   headingII/.headingII
+28   headingIII/.headingIII
+29   headingIV/.headingIV
+30   headingV/.headingV
+31   headingVI/.headingVI
+32   headingVII/.headingVII
+33   headingVIII/.headingVIII
+34   headingIX/.headingIX
+35   headingX/.headingX
+36   headingCI/.headingXI
+37   headingXII/.headingXII
+38   headingXIII/.headingXIII
+39   headingXIV/.headingXIV
+40   headingXV/.headingXV
+41   headingXVI/.headingXVI
+42   headingXVII/.headingXVII
+43   header/.header
+44   ltrSpce/.ltrSpce
+45   headerII/.headerII
+46   readMore/.readMore
+47   h1, .h1/h1, .h1
+48   h2, .h2/h2, .h2
+49   h3, .h3/h3, .h3
+50   h4, .h4/h4, .h4
+51   h5, .h5/h5, .h5
+52   overlay/.overlay
+53   overlayI/.overlayI
+54   overlayII/.overlayII
+55   overlayIII/.overlayIII
+56   btn-outline-primary/.btn-outline-primary
+57   btn/.btn
+58   btnTheme/.btnTheme
+59   bannerSec/.bannerSec
+60   heroSec/.heroSec
+61   heroIISec/.heroIISec
+62   priceStrtTag/.priceStrtTag
+63   roundedTxtHolder/.roundedTxtHolder
+64   heroSec/.heroSec
+65   bannerSlide/.bannerSlide
+66   abtSec/.abtSec
+67   olneBook/.olneBook
+67   olneBook/.olneBook
+68   svpdSec/.svpdSec
+69   checkList/.checkList
+70   dpbqSrvc/.dpbqSrvc
+71   pPCheckList/.pPCheckList
+72   cutomerFeedback/.cutomerFeedback
+73   checkList/.checkList
+74   hlpSec/.hlpSec
+75   hlpBlock/.hlpBlock
+76   hlpBlockList/.hlpBlockList
+77   plnSec/.plnSec
+78   planList/.planList
+79   dscntclb/.dscntclb
+80   dscntclbl/.dscntclbl
+81   dscntcSec/.dscntcSec
+82   discountOverClub/.discountOverClub
+83   cBlock/.cBlock
+84   counterList/.counterList
+85   feedbackSlide/.feedbackSlide
+86   locationSlider/.locationSlider
+87   wlBlock/.wlBlock
+88   awardBlock/.awardBlock
+89   awardSlider/.awardSlider
+90   rqstSrvic/.rqstSrvic
+91   requestForm/.requestForm
+92   custom-select/.custom-select
+93   mapHolder/.mapHolder
+94   lctnSec/.lctnSec
+95   footerAside/.footerAside
+96   fLink/.fLink
+97   fLinkII/.fLinkII
+98   brdCrmbHolder/.brdCrmbHolder
+99   contList/.contList
+100  emailForm1/.emailForm1
+101  socialFNetwork/.socialFNetwork
+102  hvVehicle/.hvVehicle
+103  discountHolder/.discountHolder
+104  widget/.widget
+105  postWidLink/.postWidLink
+106  postWidTags/.postWidTags
+107  recentWidPost/.recentWidPost
+108  fscwSec/.fscwSec
+109  imgBarHolder/.imgBarHolder
+110  pricePan/.pricePan
+111  hlpcBlock/.hlpcBlock
+112  maSec/.maSec
+113  wsiSec/.wsiSec
+114  sbtBlock/.sbtBlock
+115  clExSec/.clExSec
+116  gridImgHolder/.gridImgHolder
+117  jnsdSec/.jnsdSec
+118  pgWCSec/.pgWCSec
+119  fbtest/.fbtest
+120  pwHolder/.pwHolder
+121  gusSec/.gusSec
+122  suSec/.suSec
+123  cusSlider/.cusSlider
+124  csfHolder/.csfHolder
+125  shptxtHolder/.shptxtHolder
+126  disHolder/.disHolder
+127  playicn/.playicn
+128  seUSec/.seUSec
+129  aocSec/.aocSec
+130  arrowWrap/.arrowWrap
+131  hiwWrapList/.hiwWrapList
+132  hwBlock/.hwBlock
+133  wslBlock/.wslBlock
+134  olsSec/.olsSec
+135  cofBlock/.cofBlock
+136  gallerySlider/.gallerySlider
+137  lmBtn/.lmBtn
+138  lnBlock/.lnBlock
+139  miHBlock/.miHBlock
+140  cwsSec/.cwsSec
+141  lcSec/.lcSec
+142  omSec/.omSec
+143  imgMissionWrap/.imgMissionWrap
+144  accordWrap/.accordWrap
+145  wsisSec/.wsisSec
+146  wupSec/.wupSec
+147  galleryImgWrap/.galleryImgWrap
+148  lstPost/.lstPost
+149  tmeBlock/.tmeBlock
+150  vtList/.vtList
+151  vtblock/.vtblock
+152  baGsSec/.baGsSec
+153  ftrNav/.ftrNav
+154  planFullList/.planFullList
+154  planFullList/.planFullList
+155  imgWRoundWrap/.imgWRoundWrap
+156  icoRound/.icoRound
+157  orderList/.orderList
+158  clientBlock/.clientBlock
+159  hiTList/.hiTList
+160  eachWList/.eachWList
+161  checkOutForm/.checkOutForm
+162  contactForm/.contactForm
+163  LeaveCommentForm/.LeaveCommentForm
+164  appointForm/.appointForm
+165  shopList/.shopList
+166  shopItem/.shopItem
+167  shopPagenation/.shopPagenation
+168  singleProduct/.singleProduct
+169  commentTab/.commentTab
+170  js-tab-hidden/.js-tab-hidden
+171  commentDescrip/.commentDescrip
+172  chechOutTable/.chechOutTable
+173  tableResponsive/.tableResponsive
+174  couponFrom/.couponFrom
+175  cartTotalTable/.cartTotalTable
+176  shippingCalculateShip/.shippingCalculateShip
+177  proceedCheckout/.proceedCheckout
+178  myAccount/.myAccount
+179  accountForm/.accountForm
+180  widgetTypeList/.widgetTypeList
+181  contctWidgetForm/.contctWidgetForm
+182  joinClubBlock/.joinClubBlock
+183  isoFiltersList/.isoFiltersList
+184  glryImgBlock/.glryImgBlock
+185  imgBlockIIWrap/.imgBlockIIWrap
+186  awrdSec/.awrdSec
+187  serviceDetail/.serviceDetail
+188  servicetxtDetail/.servicetxtDetail
+189  servListDetail/.servListDetail
+190  bannerInr/.bannerInr
+191  abtWSec/.abtWSec
+192  abtBlockCheck/.abtBlockCheck
+193  abtBlockColumn/.abtBlockColumn
+194  teamMemSec/.teamMemSec
+195  testimonialSec/.testimonialSec
+196  unLimitPlanSec/.unLimitPlanSec
+197  managAccountWrap/.managAccountWrap
+198  mangAccontSec/.mangAccontSec
+199  LocaFHolder/.LocaFHolder
+200  icnRltn/.icnRltn
+201  locaSearchForm/.locaSearchForm
+202  faqWrapSec/.faqWrapSec
+203  gallerySec/.gallerySec
+204  galleryWFull/.galleryWFull
+205  masonaryGallery/.masonaryGallery
+206  FormJoinRowWrao/.FormJoinRowWrao
+207  blgWrap/.blgWrap
+208  postBlogList/.postBlogList
+209  ImgBlogSlider/.ImgBlogSlider
+210  filterField/.filterField
+211  shopFilterWrap/.shopFilterWrap
+212  shopGrid/.shopGrid
+213  Page404/.Page404
+214  underConstruct/.underConstruct
+215  consturctTimeList/.consturctTimeList
+216  subcribeFrom/.subcribeFrom
+217  checkOutPayment/.checkOutPayment
+218  wooInfo/.wooInfo
+219  CheckOutCoupon/.CheckOutCoupon
+220  blgStndrd/.blgStndrd
+221  noCtrtSec/.noCtrtSec
+222  scwgSec/.scwgSec
+223  customerSec/.customerSec
+224  logoPositon/.logoPositon
+225  locationDetail/.locationDetail
+226  locaContactList/.locaContactList
+227  serviceList/.serviceList
+228  mapWrapHolder/.mapWrapHolder
+229  serviceRowSlide/.serviceRowSlide
+230  serviceSlider/.serviceSlider
+231  locationDetailSec/.locationDetailSec
+232  PriceDetailBtnList/.PriceDetailBtnList
+233  couponWrap/.couponWrap
+234  blgStndrdDetail/.blgStndrdDetail
+235  noCtrtSec/.noCtrtSec
+236  scwgSec/.scwgSec
+237  customerSec/.customerSec
+238  adminHoler/.adminHoler
+239  commentHolder/.commentHolder
+240  postFooter/.postFooter
+241  blogSocialNegtworks/.blogSocialNegtworks
+242  contSideList/.contSideList
+243  MailList/.MailList
+244  socialSNetwork/.socialSNetwork
+245  contactSec/.contactSec
+246  ftimeList/.ftimeList
+247  CallBackPopForm/#CallBackPopForm
+248  appointPopup/.appointPopup
+249  ratingList/.ratingList
+250  reviewForm/.reviewForm
+251  commentReview/.commentReview
+252  commentedList/.commentedList
+253  commentedReview/.commentedReview
+
+--------------------------------------------------------*/
+
+
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+
+@import "customVariables";
+
+@import "vendor/bootstrap/mixins";
+@import "base/customMixinx";
+
+@import "vendor/slick-slider";
+
+@import "layout/common";
+@import "layout/header";
+@import "layout/footer";
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?3y6wea');
+  src:  url('fonts/icomoon.eot?3y6wea#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3y6wea') format('truetype'),
+    url('fonts/icomoon.woff?3y6wea') format('woff'),
+    url('fonts/icomoon.svg?3y6wea#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\e90e";
+  color: #00aeef;
+}
+.icon-ico45:before {
+  content: "\e909";
+  color: #555;
+}
+.icon-ico46:before {
+  content: "\e90a";
+  color: #555;
+}
+.icon-ico47:before {
+  content: "\e90b";
+  color: #555;
+}
+.icon-ico43:before {
+  content: "\e90c";
+  color: #555;
+}
+.icon-ico44:before {
+  content: "\e90d";
+  color: #555;
+}
+.icon-ico37:before {
+  content: "\e903";
+}
+.icon-ico38:before {
+  content: "\e904";
+}
+.icon-ico39:before {
+  content: "\e905";
+}
+.icon-ico40:before {
+  content: "\e906";
+}
+.icon-ico41:before {
+  content: "\e907";
+}
+.icon-ico42:before {
+  content: "\e908";
+}
+.icon-ico28:before {
+  content: "\e900";
+  color: #15528f;
+}
+.icon-ico29:before {
+  content: "\e901";
+  color: #15528f;
+}
+.icon-ico30:before {
+  content: "\e902";
+  color: #15528f;
+}

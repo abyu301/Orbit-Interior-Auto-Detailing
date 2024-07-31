@@ -1,0 +1,888 @@
+/* ---------------------------------------------------------
+1	 Logo/.logo
+--------------------------------------------------------*/
+.logo{
+	max-width: 140px;
+	z-index: 1;
+}
+/* ---------------------------------------------------------
+2	 midBar/.midBar
+--------------------------------------------------------*/
+.midBar{
+	/*z-index: 2;*/
+	.btnHolder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		.btn{
+			min-width: 100%;
+			padding-top: 4px;
+			padding-bottom: 4px;
+			font-size: 12px;
+			border-radius: 0;
+			&:focus,
+			&:active{
+				box-shadow: none !important;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+3	 contactList/.contactList
+--------------------------------------------------------*/
+.contactList{
+	z-index: 2;
+	font-size: 16px;
+	.ico,
+	.time{
+		font-size: 14px;
+		line-height: 20px;
+		.icn{
+			color: $info;
+			transition: color 0.3s ease;
+			padding: 11px;
+			border: 1px solid $info;
+		}
+	}
+	> li{
+		margin-left: 4px;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	.tell{
+		font-size: 20px;
+		line-height: 22px;
+		color: $gray-700;
+		transition: all 0.3s ease;
+		&:hover{
+			color: $cyan;
+		}
+	}
+}
+/* ---------------------------------------------------------
+4	 menuHolder/.menuHolder
+--------------------------------------------------------*/
+.menuHolder{
+	z-index: 1000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.search{
+		font-size: 16px;
+		line-height: 20px;
+		padding: 8px 10px;
+		margin-left: auto;
+		color: $info;
+		border:1px solid $info;
+		border-radius: $border-radius;
+		transition: background-color 0.3s ease;
+		z-index: 2;
+		&:active,
+		&:focus{
+			outline: none;
+		}
+	}
+}
+/* ---------------------------------------------------------
+5	 searchFormCollapse/.searchFormCollapse
+--------------------------------------------------------*/
+.searchFormCollapse{
+	top: 100%;
+	min-width: 100%;
+	z-index: 2;
+	margin-left: -15px;
+	margin-top: 20px;
+	.sForm{
+		min-width: 100%;
+		box-shadow: 0px 0px 13px 0 rgba(0,0,0,0.5);
+	}
+	.form-control{
+		height: 42px;
+	}
+	.buttonReset{
+		padding: 11px 13px 12px;
+		background: $info;
+		transition: background 0.3s ease;
+		&:hover{
+			background: rgba($info,0.8);
+		}
+	}
+}
+/* ---------------------------------------------------------
+6	 navHolder/.navHolder
+--------------------------------------------------------*/
+.navHolder{
+	margin-top: -58px;
+	.toggleBar{
+		z-index: 2;
+		margin-left: 4px;
+		&:focus,
+		&:active{
+			outline: none;
+		}
+	}
+}
+/* ---------------------------------------------------------
+7	 navCollapse/.navCollapse
+--------------------------------------------------------*/
+.navCollapse{
+	font-size: 14px;
+	line-height: 20px;
+	.nav-item{
+		&.active{
+			.nav-link{
+				&:before{
+					transform: scaleX(1);
+				}
+			}
+		}
+		.nav-link{
+			position: relative;
+			transition: color 0.3s ease;
+			&:hover{
+				&:before{
+					transform: scaleX(1);
+				}
+			}
+			&:active,
+			&:focus{
+				outline: none;
+			}
+			@include pseudo(before, 0, 0, auto, 0);
+			&:before{
+				@include size(100%, 4px);
+				background-color: $cyan;
+				transform: scaleX(0);
+				transition: all 0.3s ease;
+			}
+		}
+	}
+	.dropdown-toggle{
+		&:after{
+			display: none;
+		}
+	}
+	.dropdown-menu{
+		margin-top: 0;
+		min-width: 200px;
+		background-color: $primary;
+		a{
+			&:hover{
+				&:before{
+					transform: scalex(1);
+				}
+			}
+		}
+	}
+}
+/*.headPWrap{
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}*/
+/* ---------------------------------------------------------
+8	 homepage2/.homepage2
+--------------------------------------------------------*/
+.homepage2{
+	.posiHolder{
+		left: 0;
+		right: 0;
+	}
+	.icoHolder{
+		@include size(72px, 85px);
+	}
+	.menuHolder{
+		background: transparent;
+	}
+	/*.searchFormCollapse{
+		margin-top: 0;
+	}*/
+	.navCollapse{
+		/*@include media-breakpoint-down(md){
+			margin-top: 0;
+		}*/
+		.dropdown-menu{
+			background-color: $white;
+			a{
+				color: $gray-600;
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+		.nav-link{
+			&:active,
+			&:focus{
+				color: $gray-600;
+			}
+		}
+	}
+	.contactList{
+		color: $white;
+		.tell{
+			color: $white;
+			&:hover{
+				color: $cyan;
+			}
+		}
+	}
+	.navbar-dark{
+		.nav-link{
+			color: $gray-600;
+			&:hover,{
+				color: $gray-600;
+			}
+		}
+		.active{
+			.nav-link{
+				color: $gray-600;
+			}
+		}
+	}
+	.headerFixed{
+		.menuHolder{
+			background-color: $white;
+		}
+		.logoBlack{
+			display: block;
+		}
+		.logoWhite{
+			display: none;
+		}
+	}
+}
+/* ---------------------------------------------------------
+9	 homepage3/.homepage3
+--------------------------------------------------------*/
+.homepage3{
+	.menuHolder{
+		background: none;
+		background-color: transparent;
+	}
+	.headPWrap{
+		top: auto;
+	}
+	.midBar{
+		z-index: 1;
+	}
+	.topBar{
+		/*z-index: 1;*/
+		background-color: $gray-1200;
+		border-bottom: 1px solid $gray-1100;
+	}
+	.htTXT{
+		color: $gray-600;
+	}
+	.navCollapse{
+		/*@include media-breakpoint-down(lg){
+			margin-top: 0;
+		}*/
+	}
+}
+/* ---------------------------------------------------------
+10	 htTxt/.htTxt
+--------------------------------------------------------*/
+.htTxt{
+	color: inherit;
+	.txtWrap{
+		width: 105px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+/* ---------------------------------------------------------
+11	 snHolder/.snHolder
+--------------------------------------------------------*/
+.snHolder{
+	font-size: 16px;
+	margin-bottom: 3px;
+	.txt{
+		color: $gray-600;
+		transition: color 0.3s ease;
+	}
+	.icn{
+		color: $gray-600;
+	}
+	li {
+		position: relative;
+		padding: 0 0 0 12px;
+		margin: 0 0 0 12px;
+		&:before{
+			position: absolute;
+			content: "";
+			left: 0;
+			top: -14px;
+			bottom: 0;
+			@include size(1px, 50px);
+			background-color: $gray-1800;
+		}
+	}
+	a{
+		&:hover{
+			.txt{
+				color: $black;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+12	 topPBar/.topPBar
+--------------------------------------------------------*/
+.topPBar{
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e8e8e8;
+	.snHolder{
+		.icn{
+			@extend %colorClr;
+		}
+		.txt{
+			color: $white;
+			&:hover{
+				@extend %colorClr;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+13	 topBar/.topBar
+--------------------------------------------------------*/
+.topPBar,
+.topBar{
+	/*z-index: 2;*/
+	.socialNetwork{
+		font-size: 16px;
+		line-height: 20px;
+		li{
+			position: static;
+			margin: 0 0 0 8px;
+			padding: 0;
+		}
+		a{
+			font-size: 26px;
+			transition: color 0.35s ease;
+		}
+	}
+}
+.topPBar{
+	a{
+		color: $white;
+		&:hover{
+			color: $gray-900;
+		}
+	}
+	.socialNetwork{
+		a{
+			color: $white;
+			&:hover{
+				@extend %colorClr;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+14	 socialNetwork/.socialNetwork
+--------------------------------------------------------*/
+.socialNetwork{
+	a{
+		color: $gray-2000;
+		&:hover{
+			color: $gray-900;
+		}
+	}
+}
+/* ---------------------------------------------------------
+15	 homepage4/.homepage4
+--------------------------------------------------------*/
+.homepage4{
+	.logoWrap{
+		min-width: 170px;
+	}
+	.logo{
+		max-width: 100%;
+	}
+	.navHolder{
+		margin-right: 0;
+		background-color: $white; 
+	}
+	.navIbMenu{
+		.navCollapse{
+			margin-top: 0px;
+			.nav-link{
+				color: $white;
+				padding-top: 0;
+				padding-bottom: 0;
+				&:before{
+					background-color: $white;
+				}
+				&:before{
+					display: none;
+				}
+			}
+		}
+		.nav-item{
+			&.active{
+				.nav-link{
+					color: $white;
+					&:before{
+						display:none;
+					}
+				}
+			}
+			.nav-link{
+				&:hover{
+					color: $white;
+					&:before{
+						display:none;
+					}
+				}
+			}
+		}
+		.search{
+			color: $gray-700;
+			transition: color 0.35s ease;
+		}
+	}
+	.navHolder{
+		margin-top: 0;
+	}
+	.btnHolder{
+		display: none;
+		@media (min-width: 1430px){
+			display: block;
+		}
+		.btn{
+			min-width: 177px;
+			&:active,
+			&:hover,
+			&:focus{
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+	.searchBtnWrap{
+		.search{
+			line-height: 20px;
+			color:#00aeef;
+			border: 1px solid #00aeef;
+			border-radius: 5px;
+			padding: 8px 11px;
+			font-size: 14px;
+		}
+	}
+	@media (min-width: 1610px){
+		.navCollapse{
+			font-size: 14px;
+		}
+		.nav-item{
+			margin-left: 17px;
+			margin-right: 0;
+		}
+	}
+	.searchFormCollapse{
+		right: 0;
+		left: auto;
+		min-width: 100%;
+	}
+	.headerFixed{
+		.search{
+			display: none;
+		}
+		.btnHolder{
+			display: none;
+		}
+		.navCollapse{
+			font-size: 14px;
+			@include media-breakpoint-only(lg){
+				font-size: 13px;
+			}
+			@include media-breakpoint-only(xxl){
+				font-size: 14px;
+			}
+			@include media-breakpoint-only(lg){
+				font-size: 11px;
+			}
+		}
+		.logoWrap{
+			@include media-breakpoint-only(lg){
+				width: 268px;
+			}
+		}
+	}
+	.search{
+		display: none;
+	}
+	.searchBtnWrap{
+		.search{ display: block; }	
+	}
+}
+/* ---------------------------------------------------------
+16	 contactADList/.contactADList
+--------------------------------------------------------*/
+.contactADList{
+	font-size: 14px;
+	line-height: 18px;
+	li + li{
+		margin-left: 20px;
+	}
+	.icn{
+		cursor: default;
+		color: $gray-600;
+		font-size: 13px;
+	}
+	.txt{
+		color: $gray-600;
+		transition: color 0.3s ease;
+		&:hover{
+			color: $black;
+		}
+	}
+	.time{
+		color: $gray-600;
+	}
+	.timeList{
+		line-height: 24px;
+		li{
+			margin-left: 0;
+		}
+		li + li{
+			&:before{
+				display: inline-block;
+				content: "/";
+				margin-right: 5px;
+				margin-left: 5px;
+				color: $gray-600;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+17	 topNavLink/.topNavLink
+--------------------------------------------------------*/
+.topNavLink{
+	font-size: 14px;
+	li{ margin-right: 9px; }
+	a{
+		color: $gray-600;
+		/*color: $gray-2600;*/
+		transition: color 0.3s ease;
+		&:hover{
+			color: $black;
+			/*@extend %colorClr;*/
+		}
+	}
+}
+/*.homepage5{
+	.menuHolder{
+		background-color: $white;
+		.search{
+			padding: 0;
+			background: none;
+			color: $gray-700;
+			&:hover{
+				@extend %colorClr;
+			}
+		}
+	}
+	.navHolder{
+		margin-top: 0;
+		margin-right: 0;
+		background: none;
+		.nav-link{
+			color: $gray-700;
+			padding-top: 0;
+			padding-bottom: 0;
+			&:hover{
+				@extend %colorClr;
+			}
+			&:before{
+				display: none;
+			}
+		}
+		.nav-item{
+			&.active{
+				.nav-link{
+					@extend %colorClr;
+					&:before{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.headerFixed{
+		.logoWrap{
+			width: 485px;
+		}
+		.navCollapse{
+			font-size: 11px;
+		}
+	}
+}*/
+/*alt*/
+.alt{
+	.contactList{
+		color: $white;
+		.tell{
+			color: $white;
+			&:hover{
+				@extend %colorClr;
+			}
+		}
+	}
+	.menuHolder{ background-color: $primary; }
+	.navCollapse{
+		background-color: $white;
+		.navbar-nav{
+			.nav-link{
+				color: $gray-700;
+			}
+		}
+	}
+	.headerFixed{
+		.menuHolder{ background-color: $white; }
+		.logoWhite{ display: block; }
+		.logoBlack{ display: none; }
+	}
+	&.homepage2{
+		/*.dropdown-menu{
+			background-color: $primary;
+			a{
+				color: $white;
+				&:hover{
+					color: $white;
+				}
+			}
+		}*/
+		.navCollapse{
+			background-color: $primary;
+		}
+		.nav-item{
+			&.active{
+				.nav-link{
+					color: $white;
+				}
+			}
+			.nav-link{
+				color: $white;
+			}
+		}
+		.menuHolder{ background-color: $primary; }
+	}
+	&.homepage3{
+		.menuHolder{
+			background-color: $primary;
+		}
+		.headerFixed{
+			.menuHolder{
+				background-color: $white;
+			}
+		}
+	}
+	&.homepage4{
+		.navCollapse{
+			.nav-link{
+				color: $gray-500;
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+		.navHolder{
+			background-color: $primary;
+		}
+		.navIbMenu{
+			.search{
+				&:hover{
+					color: $info;
+				}
+			}
+		}
+		.menuLHolder{
+			background-color: $primary;
+		}
+	}
+	/*&.homepage4{
+		.navHolder{
+			background-color: $primary;
+			.nav-item{
+				&.active{
+					.nav-link{
+						color: $black;
+					}
+				}
+				.nav-link{
+					&:hover{
+						color: $black;
+					}
+				}
+			}
+		}
+		.nav-link{
+			color: $white;
+		}
+		.search{
+			color: $white;
+			&:hover{
+				color: $black;
+			}
+		}
+	}*/
+}
+.topPBar{
+	.htTxt{
+		color: $white;
+		.txtWrap{
+			color: $white;
+		}
+	}
+	.contactADList{
+		.icn{
+			@extend %colorClr;
+		}
+		.txt{
+			color: $gray-2600;
+			&:hover{
+				color: $white;
+			}
+		}
+		.time{
+			color: $gray-2600;
+		}
+		.timeList{
+			li + li{
+				&:before{
+					color: $gray-2600;
+				}
+			}	
+		}
+	}
+	.topNavLink{
+		a{
+			color: $gray-2600;
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+18	 dropMenu/.dropMenu
+--------------------------------------------------------*/
+.dropMenu{
+	font-size: 15px;
+	a{
+		/* padding-top: 8px;
+		padding-bottom: 8px; */
+		color: $white;
+		transition: color 0.35s ease;
+		position: relative;
+		&:hover,
+		&:active,
+		&:focus{
+			background-color: transparent;
+			@extend %colorClr;
+			.subMenu{
+				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		/* @include media-breakpoint-down(md){
+			@include pseudo(before, 0, 0, auto, 0);
+		}
+		&:before{
+			@include size(100%, 2px);
+			@extend %colorBg;
+			transform: scaleX(0);
+			transition: transform 0.35s ease;
+		} */
+	}
+	.subMenu{
+		display: block;
+	}
+	.subMenuDrop{
+		&:hover{
+			.subMenu{
+				opacity: 1 !important;
+				visibility: visible !important;
+				transform: translateX(0)!important;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------------
+19	 menuLogo/.menuLogo
+--------------------------------------------------------*/
+.menuLogo{
+	display: none;
+}
+/* ---------------------------------------------------------
+20	 headerFixed/.headerFixed
+--------------------------------------------------------*/
+.headerFixed{
+	.menuLogo{
+		display: block;
+		width: 130px;
+		margin-right: 30px;
+	}
+	.searchFormCollapse{
+		margin-top: 20px;
+		display: none;
+		/*@include media-breakpoint-up(lg){
+			margin-top: 0;
+		}*/
+	}
+	.sticky-wrap-menuHolder{
+		margin-bottom: 0;
+	}
+	.navHolder{
+		margin-top: 0;
+		margin-right: 0;
+	}
+	.menuHolder{
+		background-color: $primary;
+		box-shadow: 0px 1px 5px rgba(0,0,0,0.7);
+	}
+	.nav-item{
+		.nav-link{
+			@include media-breakpoint-only(lg){
+				padding-left: 6px;
+				padding-right: 6px;
+			}
+		}
+	}
+	.navCollapse{
+		font-size: 12px;
+	}
+	.logoWhite{
+		display: none;
+	}
+	.menuLHolder{
+		background-color: $white;
+		z-index: 2;
+		box-shadow: 0px 1px 5px rgba($black,0.7);
+	}
+	.logoWrap{
+		width: 350px;
+	}
+	.homepage4{
+		.btnHolder{
+			display: none;
+		}
+		.navCollapse{
+			font-size: 11px;
+		}
+		.search{
+			display: none;
+		}
+		.logoWrap{
+			width: 485px;
+		}
+	}
+}

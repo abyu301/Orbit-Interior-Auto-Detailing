@@ -1,0 +1,91 @@
+/* ---------------------------------------------------------
+254	 flogo/.flogo
+--------------------------------------------------------*/
+.flogo{
+	max-width:215px;
+	@include media-breakpoint-up(sm){
+		max-width:235px;
+	}
+	@include media-breakpoint-up(md){
+		max-width:250px;
+	}
+	@include media-breakpoint-up(lg){
+		max-width:284px;
+	}
+}
+/* ---------------------------------------------------------
+255	 footer/#footer
+--------------------------------------------------------*/
+#footer{
+	font-size: 14px;
+	line-height: 17px;
+	color: $gray-500;
+	@include media-breakpoint-up(lg){
+		font-size: 15px;
+	}
+	.txt{
+		a{
+			color: $gray-500;
+			transition: color 0.3s ease;
+			&:hover{
+				color: $info;
+			}
+		}
+	}
+	.ftTxt{
+		font-size: 17px;
+		a{
+			color: $white;
+			transition: color 0.3s ease;
+			&:hover{
+				color: $gray-300;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+256	 footerLink/.footerLink
+--------------------------------------------------------*/
+.footerLink{
+	> li{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 6px;
+		@include media-breakpoint-up(md){
+			margin-bottom: 0px;
+			margin-left: 16px;
+			margin-right: 0;
+		}
+		&:first-child{
+			margin-left: 0;
+		}
+		> a{
+			color: $gray-500;
+			transition: color 0.3s ease;
+			&:hover{
+				color: $info;
+			}
+		}
+	}
+}
+/* ---------------------------------------------------------
+257	 socialFWNetwork/.socialFWNetwork
+--------------------------------------------------------*/
+.socialFWNetwork{
+	font-size: 32px;
+	line-height: 34px;
+	@include media-breakpoint-up(md){
+		font-size: 36px;
+		line-height: 38px;
+	}
+	li + li{
+		margin-left: 10px;
+	}
+	a{
+		color: $white;
+		transition: color 0.35s ease;
+		&:hover{
+			color: $gray-500;
+		}
+	}
+}

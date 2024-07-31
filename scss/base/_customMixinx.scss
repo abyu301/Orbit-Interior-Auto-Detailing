@@ -1,0 +1,21 @@
+@mixin pseudo($pseudo, $top, $right, $bottom, $left){
+
+	&:#{$pseudo}{
+		content: '';
+		position: absolute;
+		top: $top;
+		right: $right;
+		bottom: $bottom;
+		left: $left;
+	}
+}
+
+%colorBg{
+	background-color: $wpThemeColor;
+}
+%colorClr{
+	color: $wpThemeColor;
+}
+%colorBdr{
+	border-color: $wpThemeColor;
+}
