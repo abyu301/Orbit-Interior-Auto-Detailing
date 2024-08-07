@@ -741,37 +741,14 @@
 						<div class="col-12 col-md-6 text-white text-center px-xl-13 mb-10 mb-md-2 txtHolder">
 							<h4 class="h4 pb-4 mb-5 position-relative text-white">Request a Call Back for Your Next Car Wash Service</h4>
 							<p>Experience the best in car detailing with Orbit Interior Auto Detailing. Reach out to us for your next service. Call us at 1-403-481-0433 between 09:00 and 18:00, Monday to Sunday.</p>
-							<strong class="d-block headingIV mb-9">Call: <a href="tel:18001234567">1-403-481-0433</a></strong>
-							<a href="contact 1.html" class="btn btnTheme fwEbold text-uppercase py-3 py-lg-4 px-5 px-lg-6">contact us now</a>
+							<strong class="d-block headingIV mb-9">Call: <a href="tel:14034810433">1-403-481-0433</a></strong>
+							
+							<!-- "Book Online" Button -->
+							<a href="book-online.html" class="btn btnTheme fwEbold text-uppercase py-3 py-lg-4 px-5 px-lg-6">Book Online</a>
+							
+							<!-- "Text Us Now" Button -->
+							<a href="sms:+14034810433?body=Hi%20there%2C%20I%27d%20like%20to%20schedule%20a%20car%20wash%20service%21" class="btn btnTheme fwEbold text-uppercase py-3 py-lg-4 px-5 px-lg-6">Text Us Now</a>
 						</div>
-						<div class="col-12 col-md-6">
-							<!-- requestForm -->
-							<form action="#" class="requestForm bg-white rounded p-5 py-lg-7 px-lg-8">
-								<div class="form-group">
-									<label class="text-gray" for="serviceSelect">I would like to discuss:</label>
-								</div>
-								<div class="form-group">
-									<label class="text-gray" for="nameFormControl">Name</label>
-									<input type="text" class="form-control" id="nameFormControl" name="name" placeholder="Your Name" required>
-								</div>
-								<div class="form-group mb-4">
-									<label class="text-gray" for="phoneFormControl">Phone Number</label>
-									<input type="tel" class="form-control" id="phoneFormControl" name="phone" placeholder="Your Phone Number" required>
-								</div>
-								<div class="form-group mb-4">
-									<label class="text-gray" for="emailFormControl">Email Address</label>
-									<input type="email" class="form-control" id="emailFormControl" name="email" placeholder="Your Email Address" required>
-								</div>
-								<div class="form-group mb-4">
-									<label class="text-gray" for="messageFormControl">Message</label>
-									<textarea class="form-control" id="messageFormControl" name="message" placeholder="Your Message" rows="4" required></textarea>
-								</div>
-								<div class="form-group mb-1">
-									<button type="submit" class="btn btn-primary text-uppercase fwEbold px-5">Send Request</button>
-								</div>
-							</form>
-						</div>
-						
 					</div>
 				</div>
 			</section>
@@ -906,111 +883,140 @@
 
 
 		<!-- modal -->
-		<div class="modal pr-0 fade" id="exampleModal">
-			<!-- appointPopup -->
-			<div class="modal-dialog appointPopup" role="document">
-				<div class="modal-content">
-					<div class="modal-header py-3 py-sm-4 py-md-5 px-7 px-sm-12 px-md-14 text-center position-relative">
-						<h5 class="modal-title headingVII text-capitalize w-100" id="exampleModalLabel">Schedule Your Car Detailing Appointment</h5>
-						<button type="button" class="close rounded-circle position-absolute m-0" data-dismiss="modal" aria-label="Close">
-						</button>
+		<section>
+			<div class="modal pr-0 fade" id="exampleModal">
+				<div class="modal-dialog appointPopup" role="document">
+					<div class="modal-content">
+						<div class="modal-header py-3 py-sm-4 py-md-5 px-7 px-sm-12 px-md-14 text-center position-relative">
+							<h5 class="modal-title headingVII text-capitalize w-100" id="exampleModalLabel">Schedule Your Car Detailing Appointment</h5>
+							<button type="button" class="close rounded-circle position-absolute m-0" data-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<form class="appointForm" id="appointmentForm">
+							<div class="modal-body p-0">
+								<div class="formGroup px-2 py-4 p-sm-6 p-md-8 pt-lg-10 px-lg-10">
+									<h3 class="headingVIII mb-1 text-capitalize">Your Location</h3>
+									<label>Enter your address with postal code</label>
+									<input type="text" class="form-control" name="address" placeholder="1234 Main St, Calgary, AB T1X 1X1" required>
+								</div>
+								<div class="formGroup vehicleWrap px-2 py-4 p-sm-6 p-md-8 px-lg-10">
+									<h3 class="headingVIII mb-1 text-capitalize">Vehicle Type</h3>
+									<label>Select your vehicle type</label>
+									<div class="d-sm-flex vehicleWrapCheck flex-wrap">
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="SUV" id="defaultCheck1">
+											<label class="form-check-label" for="defaultCheck1">Small Cars</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="Sedan" id="defaultCheck2">
+											<label class="form-check-label" for="defaultCheck2">Sedan</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="Small SUV" id="defaultCheck3">
+											<label class="form-check-label" for="defaultCheck3">SUVs & Trucks</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="Mini Van" id="defaultCheck4">
+											<label class="form-check-label" for="defaultCheck4">Vans & Boats</label>
+										</div>
+									</div>
+								</div>
+								<div class="formGroup pkgWrap py-4 px-2 p-sm-6 pb-sm-2 pt-md-7 pb-md-4 px-lg-8 px-lg-10">
+									<h3 class="headingVIII mb-1 mb-lg-2 text-capitalize">Detailing Packages</h3>
+									<label>Select the best package for your vehicle</label>
+									<select class="custom-select mb-6" name="package" id="packageSelect" required>
+										<option value="">- Select Service Package -</option>
+										<option value="basic">Basic Package</option>
+										<option value="premium">Premium Package</option>
+									</select>
+								</div>
+								<div class="formGroup appointDetail py-4 px-2 p-sm-6 pb-sm-3 px-md-8 pt-md-8 pb-md-6 pb-lg-6 px-lg-10">
+									<h3 class="headingVIII text-capitalize">Appointment Details</h3>
+									<label>When would you like us to come?</label>
+									<div class="row formRow">
+										<div class="col-12 col-md-6">
+											<input class="form-control" type="date" name="appointment_date" required>
+										</div>
+										<div class="col-12 col-md-6">
+											<input class="form-control" type="time" name="appointment_time" required>
+										</div>
+									</div>
+								</div>
+								<div class="formGroup border-0 enterDetail py-4 px-2 p-sm-6 p-md-8 px-lg-10">
+									<h3 class="headingVIII text-capitalize mb-2">Enter Your Details</h3>
+									<label>This information will be used to contact you about your service.</label>
+									<div class="row formRow">
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="text" name="first_name" placeholder="First Name" required>
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="tel" name="phone" placeholder="Phone Number" required>
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="email" name="email" placeholder="Email Address" required>
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="text" name="vehicle_model" placeholder="Vehicle Model" required>
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="text" name="vehicle_year" placeholder="Vehicle Year" required>
+											</div>
+										</div>
+									</div>
+									<textarea class="form-control" name="additional_requirements" placeholder="Additional Requirements"></textarea>
+								</div>
+							</div>
+							<div class="modal-footer text-center px-2 px-sm-6 px-md-10 px-lg-24 mt-n1 pt-0 pb-8 pb-sm-10 pb-md-13 pb-lg-17 d-block border-0">
+								<p>Please note that the date and time you requested may not be available. We will contact you to confirm your actual appointment details.</p>
+								<button type="submit" class="btn btnTheme text-uppercase fwEbold text-uppercase m-0">Confirm Booking</button>
+							</div>
+						</form>
 					</div>
-					<!-- appointForm -->
-					<form class="appointForm" id="appointmentForm">
-						<div class="modal-body p-0">
-							<div class="formGroup px-2 py-4 p-sm-6 p-md-8 pt-lg-10 px-lg-10">
-								<h3 class="headingVIII mb-1 text-capitalize">Your Location</h3>
-								<label>Enter your address with postal code</label>
-								<input type="text" class="form-control" name="address" placeholder="1234 Main St, Calgary, AB T1X 1X1" required>
-							</div>
-							<!-- vehicleWrap -->
-							<div class="formGroup vehicleWrap px-2 py-4 p-sm-6 p-md-8 px-lg-10">
-								<h3 class="headingVIII mb-1 text-capitalize">Vehicle Type</h3>
-								<label>Select your vehicle type</label>
-								<div class="d-sm-flex vehicleWrapCheck flex-wrap">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="SUV" id="defaultCheck1">
-										<label class="form-check-label" for="defaultCheck1">Small Cars</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="Sedan" id="defaultCheck2">
-										<label class="form-check-label" for="defaultCheck2">Sedan</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="Small SUV" id="defaultCheck3">
-										<label class="form-check-label" for="defaultCheck3">SUVs & Trucks</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" name="vehicle_type[]" value="Mini Van" id="defaultCheck4">
-										<label class="form-check-label" for="defaultCheck4">Vans & Boats</label>
-									</div>
-								</div>
-							</div>
-							<!-- pkgWrap -->
-							<div class="formGroup pkgWrap py-4 px-2 p-sm-6 pb-sm-2 pt-md-7 pb-md-4 px-lg-8 px-lg-10">
-								<h3 class="headingVIII mb-1 mb-lg-2 text-capitalize">Detailing Packages</h3>
-								<label>Select the best package for your vehicle</label>
-								<select class="custom-select mb-6" name="package" id="packageSelect" required>
-									<option value="">- Select Service Package -</option>
-									<option value="basic">Basic Package</option>
-									<option value="premium">Premium Package</option>
-								</select>
-							</div>
-							<div class="formGroup appointDetail py-4 px-2 p-sm-6 pb-sm-3 px-md-8 pt-md-8 pb-md-6 pb-lg-6 px-lg-10">
-								<h3 class="headingVIII text-capitalize">Appointment Details</h3>
-								<label>When would you like us to come?</label>
-								<div class="row formRow">
-									<div class="col-12 col-md-6">
-										<input class="form-control" type="date" name="appointment_date" required>
-									</div>
-									<div class="col-12 col-md-6">
-										<input class="form-control" type="time" name="appointment_time" required>
-									</div>
-								</div>
-							</div>
-							
-							<!-- enterDetail -->
-							<div class="formGroup border-0 enterDetail py-4 px-2 p-sm-6 p-md-8 px-lg-10">
-								<h3 class="headingVIII text-capitalize mb-2">Enter Your Details</h3>
-								<label>This information will be used to contact you about your service.</label>
-								<div class="row formRow">
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="text" name="first_name" placeholder="First Name" required>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="tel" name="phone" placeholder="Phone Number" required>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="email" name="email" placeholder="Email Address" required>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="text" name="vehicle_model" placeholder="Vehicle Model" required>
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<input class="form-control" type="text" name="vehicle_year" placeholder="Vehicle Year" required>
-										</div>
-									</div>
-								</div>
-								<textarea class="form-control" name="additional_requirements" placeholder="Additional Requirements"></textarea>
-							</div>
-						</div>
-						<div class="modal-footer text-center px-2 px-sm-6 px-md-10 px-lg-24 mt-n1 pt-0 pb-8 pb-sm-10 pb-md-13 pb-lg-17 d-block border-0">
-							<p>Please note that the date and time you requested may not be available. We will contact you to confirm your actual appointment details.</p>
-							<button type="submit" class="btn btnTheme text-uppercase fwEbold text-uppercase m-0">Confirm Booking</button>
-						</div>
-					</form>
 				</div>
 			</div>
-		</div>
+		
+			<script>
+				document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+					e.preventDefault();
+					
+					let formData = new FormData(this);
+					let formObject = {};
+					formData.forEach((value, key) => {
+						if (formObject[key]) {
+							formObject[key] = [].concat(formObject[key], value);
+						} else {
+							formObject[key] = value;
+						}
+					});
+		
+					fetch('/api/send-email', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify(formObject)
+					})
+					.then(response => response.json())
+					.then(data => {
+						if (data.success) {
+							alert('Your appointment has been submitted successfully!');
+						} else {
+							alert('There was an error submitting your appointment. Please try again.');
+						}
+					})
+					.catch(error => console.error('Error:', error));
+				});
+			</script>
+		</section>
+		
 		
 		<!-- Success Modal -->
 		<div class="modal pr-0 fade" id="successModal">
